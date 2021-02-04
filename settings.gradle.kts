@@ -1,1 +1,1 @@
-rootProject.name = "Java-Exec-Api"
+rootProject.name = "java-exec-api"
