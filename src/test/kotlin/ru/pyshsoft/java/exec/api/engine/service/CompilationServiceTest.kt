@@ -1,18 +1,18 @@
-package ru.pyshsoft.java.exec.api.service
+package ru.pyshsoft.java.exec.api.engine.service
 
-import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
+import ru.pyshsoft.java.exec.api.engine.service.compile.CompilationService
 
 @SpringBootTest
-class ExecServiceTest {
+class CompilationServiceTest {
 
     @Autowired
-    lateinit var execService: ExecService
+    lateinit var compilationService: CompilationService
 
     @Test
-    fun testExecution() {
+    fun test() {
         val sourceCode = """
             package ru.pyshinskiy;
             
@@ -21,9 +21,7 @@ class ExecServiceTest {
                     System.out.println("Hello, World!");
                 }
             } """
-        val expectedOutput = "Hello, World!"
-        val actualOutput = execService.exec(sourceCode)
-        assertEquals(expectedOutput, actualOutput.trim())
+        compilationService.compile("ru.pyshinskiy.Main", sourceCode)
     }
 
 }

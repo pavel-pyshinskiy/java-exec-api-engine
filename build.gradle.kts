@@ -7,7 +7,7 @@ plugins {
 	kotlin("plugin.spring") version "1.4.21"
 }
 
-group = "ru.pyshsoft"
+group = "ru.pyshsoft.java.exec.api"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_1_8
 

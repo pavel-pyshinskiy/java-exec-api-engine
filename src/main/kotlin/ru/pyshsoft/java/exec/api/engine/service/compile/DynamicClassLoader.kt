@@ -1,4 +1,4 @@
-package ru.pyshsoft.java.exec.api.service.compile
+package ru.pyshsoft.java.exec.api.engine.service.compile
 
 class DynamicClassLoader(private val inMemoryFileManager: InMemoryFileManager): ClassLoader() {
 

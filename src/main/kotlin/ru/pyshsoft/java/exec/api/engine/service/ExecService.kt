@@ -1,8 +1,8 @@
-package ru.pyshsoft.java.exec.api.service
+package ru.pyshsoft.java.exec.api.engine.service
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component
-import ru.pyshsoft.java.exec.api.service.compile.CompilationService
+import ru.pyshsoft.java.exec.api.engine.service.compile.CompilationService
 import java.io.ByteArrayOutputStream
 import java.io.PrintStream
 

@@ -1,15 +1,14 @@
-package ru.pyshsoft.java.exec.api
+package ru.pyshsoft.java.exec.api.engine
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import org.springframework.context.annotation.Bean
-import ru.pyshsoft.java.exec.api.service.compile.CompilationServiceImpl
 import javax.tools.JavaCompiler
 import javax.tools.StandardJavaFileManager
 import javax.tools.ToolProvider
 
 @SpringBootApplication
-class JavaExecApiApplication {
+class JavaExecApiEngineApplication {
 
 	@Bean
 	fun javaCompiler(): JavaCompiler = ToolProvider.getSystemJavaCompiler()
@@ -21,5 +20,5 @@ class JavaExecApiApplication {
 }
 
 fun main(args: Array<String>) {
-	runApplication<JavaExecApiApplication>(*args)
+	runApplication<JavaExecApiEngineApplication>(*args)
 }
